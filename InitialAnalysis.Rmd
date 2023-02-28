@@ -1,0 +1,117 @@
+---
+title: "Playoff 1 Initial Analysis"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+library(extrafont) 
+library(tidyverse)
+library(gridExtra)
+
+
+# execute once to add fonts:
+# font_import() 
+
+loadfonts(device='win')
+windowsFonts("Latex" = windowsFont("CMU Serif"))
+
+goals = read.csv("Goals.csv")
+head(goals)
+```
+
+Correlation
+```{r}
+#Select Numeric Only
+cor_df = goals[sapply(goals, class) != 'character']
+
+library("Hmisc") # Gives P-Values for correlation
+library(ggcorrplot)
+library(ggplot2)
+res2 <- rcorr(as.matrix(cor_df))
+
+
+corr = res2$r # Correlations
+corr_p = res2$P # P-values
+
+
+
+ggcorrplot(corr, colors = c("red", "#E7E7E7", "blue"),
+           tl.cex = 11, tl.srt = 90, show.diag = F,
+          p.mat = corr_p, legend.title = "Correlation",
+          ggtheme = ggplot2::theme_classic) +
+  
+  theme(text = element_text(family = "Latex", size = 12),
+        axis.text.x = element_text(vjust = 0.1, hjust = 1),
+        panel.background = element_rect(fill = '#242424'))
+
+ggsave(file='CorrPlot.png', width = 7, height = 7)
+```
+Barplot
+```{r}
+goalslong <- gather(goals, key="measure", value="value", c(names(goals)[5:12]))
+goalslong
+ggplot(goalslong, aes(x=Player.Name, y=value))+
+  geom_bar(stat='identity', fill="forest green")+
+  facet_wrap(~measure,ncol=2) +
+  theme_grey(base_size = 16) +
+  theme(axis.text = element_text(size = 9),
+        axis.text.x = element_text(angle=-90, hjust=0,vjust=0.2),
+    text = element_text(family = "Latex", size = 15)) + 
+   scale_fill_grey()
+
+ggsave(file='BarPlot.png', width = 7, height = 7)
+```
+
+
+Compare Erin To Everyone Else
+
+```{r}
+not_matson = which(goals$Player.Name != 'Erin Matson')
+
+matson = goals
+
+matson$Player.Name[not_matson] = 'Not Matson'
+```
+
+```{r}
+#Initialize Dataframe
+chisq_dataframe = data.frame(VariableName = c(1),
+                             ChiSquared = c(1),
+                             PValue = c(1))
+
+
+for (i in c(1:ncol(matson))){
+  #Remove columns for country names and citizenship dtm
+  #----------------------
+  ignored_columns = c('Goal', "Game.Number",'Game.Opponent', "Player.Name")
+
+  
+  # If column isnt in ignored columns
+  if (!(names(matson)[i] %in% ignored_columns)){
+    c = chisq.test(matson$Player.Name, matson[[i]])
+    
+    # Add Row To Table
+    chisq_dataframe[nrow(chisq_dataframe) + 1,] = 
+    c(names(matson)[i],c$statistic, c$p.value)
+  }
+  
+
+
+}
+# Change Class and Remove Initial Row
+chisq_dataframe$ChiSquared = as.numeric(chisq_dataframe$ChiSquared)
+chisq_dataframe$PValue = as.numeric(chisq_dataframe$PValue)
+chisq_dataframe = chisq_dataframe[-c(1),]
+```
+
+```{r}
+# Save As Image
+library(grid)
+
+png("ChiSq.png", res = 100)
+p<-tableGrob(chisq_dataframe)
+grid.arrange(p)
+dev.off()
+```
+
