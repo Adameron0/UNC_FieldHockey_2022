@@ -1,0 +1,127 @@
+---
+title: "playoff1"
+output: html_document
+date: "2023-03-01"
+---
+
+```{r setup, include=FALSE}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(gt)
+
+goals=read_csv('goals.csv')
+```
+
+```{r}
+head(goals)
+goals = goals %>% 
+  rename('Game.Number' = "Game Number",
+         "Game.Opponent" = "Game Opponent",
+         "Player.Name" = "Player Name",
+         "Scored.Goal" = "Scored Goal",
+         "Shots.On.Goal" = "Shots On Goal",
+         "Rebound.Goal" = "Rebound Goal",
+         "Pass.To.Assist" = "Pass-To-Assist",
+         "Insert.Penalty.Corner" = "Insert/Penalty Corner",
+         "Foul.Drawn" = "Foul Drawn")
+head=gt(head(goals, 7))
+gtsave(head, 'data_head.html')
+
+```
+
+
+
+```{r}
+#goals grouped by Player -- counts 
+
+counts_table = goals %>% 
+  group_by(Player.Name) %>% 
+  summarise(Scored.Goal.Count=sum(Scored.Goal),
+            Shots.on.Goal.Count=sum(Shots.On.Goal),
+            Rebound.Goal.Count=sum(Rebound.Goal),
+            Assist.Count=sum(Assist),
+            Pass.Assist.Count=sum(Pass.To.Assist),
+            Corner.Count=sum(Insert.Penalty.Corner),
+            Foul.Count=sum(Foul.Drawn),
+            .groups = 'drop') %>% 
+  arrange(desc(Scored.Goal.Count)) %>% 
+  gt()
+
+counts_table
+gtsave(counts_table, 'counts_table.html')
+```
+
+```{r}
+#bar plot for goals 
+counts_table_df = goals %>% 
+  group_by(Player.Name) %>% 
+  summarise(Scored.Goal.Count=sum(Scored.Goal),
+            Shots.on.Goal.Count=sum(Shots.On.Goal),
+            Rebound.Goal.Count=sum(Rebound.Goal),
+            Assist.Count=sum(Assist),
+            Pass.Assist.Count=sum(Pass.To.Assist),
+            Corner.Count=sum(Insert.Penalty.Corner),
+            Foul.Count=sum(Foul.Drawn),
+            .groups = 'drop') %>% 
+  arrange(desc(Scored.Goal.Count))
+counts_table_df=as.data.frame(counts_table_df)
+counts_table_df
+
+sum.scored = sum(counts_table_df[,"Scored.Goal.Count"])
+sum.sog = sum(counts_table_df[,"Shots.on.Goal.Count"])
+sum.rg = sum(counts_table_df[,"Rebound.Goal.Count"])
+sum.a = sum(counts_table_df[,"Assist.Count"])
+sum.pa = sum(counts_table_df[,"Pass.Assist.Count"])
+sum.corn = sum(counts_table_df[,"Corner.Count"])
+sum.f = sum(counts_table_df[,"Foul.Count"])
+
+```
+
+
+```{r}
+#relative frequency tables 
+counts_table_df_relfreq = goals %>% 
+  group_by(Player.Name) %>% 
+  summarise(Scored.Goal=round(sum(Scored.Goal)/sum.scored,4)*100,
+            Shots.on.Goal=round(sum(Shots.On.Goal)/sum.sog, 4)*100,
+            Rebound.Goal=round(sum(Rebound.Goal)/sum.rg, 4)*100,
+            Assist=round(sum(Assist)/sum.a, 4)*100,
+            Pass.Assist=round(sum(Pass.To.Assist)/sum.pa, 4)*100,
+            Corner=round(sum(Insert.Penalty.Corner)/sum.corn, 4)*100,
+            Foul=round(sum(Foul.Drawn)/sum.f, 4)*100,
+            .groups = 'drop') %>% 
+  arrange(desc(Scored.Goal)) %>% 
+  gt()
+
+counts_table_df_relfreq
+gtsave(counts_table_df_relfreq, 'counts_table_df_relfreq.html')
+```
+
+```{r}
+#touches
+touches_table = goals %>% 
+  group_by(Player.Name) %>% 
+  summarise(Avg.Touches = round(mean(Touches), 3), 
+            Min.Touches=min(Touches),
+            Max.Touches=max(Touches),
+            SD.Touches=round(sd(Touches), 3)) %>% 
+  arrange(desc(Avg.Touches)) %>% 
+  gt()
+
+touches_table
+gtsave(touches_table, 'touches.html')
+```
+
+```{r}
+#touches VS Assists VS scored goals 
+
+three_top_touches = goals %>% 
+  filter(Player.Name=='Ashley Sessa' | Player.Name=='Paityn Wirth' | Player.Name=="Erin Matson") %>% 
+    group_by(Player.Name, Game.Number)
+three_top_touches=as.data.frame(three_top_touches)
+three_top_touches
+```
+
+
+

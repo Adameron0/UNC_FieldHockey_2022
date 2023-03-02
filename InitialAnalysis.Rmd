@@ -58,7 +58,7 @@ ggplot(goalslong, aes(x=Player.Name, y=value))+
   theme(axis.text = element_text(size = 9),
         axis.text.x = element_text(angle=-90, hjust=0,vjust=0.2),
     text = element_text(family = "Latex", size = 15)) + 
-   scale_fill_grey()
+   scale_fill_grey() + xlab("Player Name") + ylab("Total Count")
 
 ggsave(file='BarPlot.png', width = 7, height = 7)
 ```
@@ -113,5 +113,236 @@ png("ChiSq.png", res = 100)
 p<-tableGrob(chisq_dataframe)
 grid.arrange(p)
 dev.off()
+```
+
+
+# Visualize Data
+
+Reduce to only Players involved in atleast 5 goals
+
+```{r}
+library(dplyr)
+atleast5 = goals %>% count(goals$Player.Name) %>% filter(n >= 5)
+atleast5 = which(goals$Player.Name %in% atleast5[[1]])
+g5 = goals[atleast5,]
+```
+
+
+
+```{r}
+library(ComplexHeatmap)
+library(circlize)
+colors = colorRamp2(c(0, 1, 2, 3), c("#EDF1D6", "#9DC08B",
+                                  "#609966","#40513B"))
+
+pushViewport(viewport(gp = gpar(fontfamily = "HersheyScript")))
+
+png("Heatmap.png", res = 100)
+Heatmap(g5[5:12],row_split = g5[, 4], show_row_names=F, row_title_rot = 0,
+        show_column_dend = FALSE, show_row_dend = FALSE, cluster_rows = F,
+        col = colors, row_title_gp = gpar(fontsize = 10),
+        row_gap = unit(3, "mm"),
+        column_names_gp = gpar(fontsize = 10),
+        name = "Value")
+
+
+
+dev.off()
+```
+
+
+
+# Quantify Value of Play
+
+Poisson Model To Predict Number of Goals Each Game
+
+```{r}
+# Add total number of goals involving player for game to data set
+
+game_goals = c()
+
+
+for (i in 1:max(goals$Game.Number)){
+  gamei = goals[goals$Game.Number == i,]
+  for (j in 1:nrow(gamei)){
+    nam = gamei$Player.Name[j]
+    cnt = sum(gamei$Player.Name == nam)
+    game_goals <- append(game_goals, cnt)
+  }
+}
+goals$Game.Goals.Involved = game_goals
+```
+
+
+Linear Model
+
+```{r}
+library(gtsummary)
+library(gt)
+lmod1 = glm(Game.Goals.Involved~0+.-Game.Number-Game.Opponent-Goal, data = goals)
+t1 = tbl_regression(lmod1)
+gtsave(as_gt(t1), file = "Linear1.png")
+```
+
+```{r}
+lmod2 = glm(Game.Goals.Involved~0+Player.Name, data = goals)
+t1 = tbl_regression(lmod2)
+gtsave(as_gt(t1), file = "Linear2.png")
+```
+
+Poisson Model
+```{r}
+pmod1 = glm(Game.Goals.Involved~0+.-Game.Number-Game.Opponent-Goal, data = goals, family = poisson)
+t1 = tbl_regression(pmod1, exponentiate = TRUE)
+gtsave(as_gt(t1), file = "Poisson1.png")
+```
+
+```{r}
+pmod2 = glm(Game.Goals.Involved~0+ Player.Name, data = goals, family = poisson)
+t1 = tbl_regression(pmod2, exponentiate = TRUE)
+gtsave(as_gt(t1), file = "Poisson2.png")
+```
+
+```{r}
+unique(goals$Player.Name)
+```
+
+
+```{r}
+library(modelsummary)
+models <- list(
+  "Poisson" = pmod2,
+  "Linear" = lmod2
+  
+)
+
+
+coef_rename = c("Ashley Sessa",
+                "Meredith Sholder",
+                "Lisa Slinkert",
+                "Madison Orobono",
+                "Sietske Bruning",
+                "Erin Matson",
+                "Ryleigh Heck",
+                "Kennedy Cliggett",
+                "Romea Riccardo",
+                "Kiersten Thomassey",
+                "Jasmina Smolenaars",
+                "Paityn Wirth",
+                "Katie Dixon",
+                "Steph Weber",
+                "Kelly Smith",
+                "Yasmina Smolenaars",
+                "Ciana Riccardo")
+
+tt = modelsummary(models, output = "gt", statistic = NULL,
+             estimate  = "{estimate}{stars}[{conf.low}, {conf.high}]",
+             exponentiate = c(T,F),
+             stars = c(" " = 1, '*' = .1, '**' = .05, "***" = 0.01),
+             notes = c("p<0.1 (*)","p<0.05 (**)","p<0.01 (***)")
+)
+gtsave(tt, file = "Summary.tex")
+```
+
+
+Report Graphics
+
+```{r}
+library(xtable)
+
+ag = aggregate(. ~ Player.Name, goals[4:12], sum)
+ag = ag[order(ag$Scored.Goal, decreasing = T),]
+xtable(ag, type = "latex", file = "Agg1.tex")
+```
+
+
+```{r}
+counts_table_df = goals %>% 
+  group_by(Player.Name) %>% 
+  summarise(Scored.Goal.Count=sum(Scored.Goal),
+            Shots.on.Goal.Count=sum(Shots.On.Goal),
+            Rebound.Goal.Count=sum(Rebound.Goal),
+            Assist.Count=sum(Assist),
+            Pass.Assist.Count=sum(Pass.To.Assist),
+            Corner.Count=sum(Insert.Penalty.Corner),
+            Foul.Count=sum(Foul.Drawn),
+            .groups = 'drop') %>% 
+  arrange(desc(Scored.Goal.Count))
+counts_table_df=as.data.frame(counts_table_df)
+
+sum.scored = sum(counts_table_df[,"Scored.Goal.Count"])
+sum.sog = sum(counts_table_df[,"Shots.on.Goal.Count"])
+sum.rg = sum(counts_table_df[,"Rebound.Goal.Count"])
+sum.a = sum(counts_table_df[,"Assist.Count"])
+sum.pa = sum(counts_table_df[,"Pass.Assist.Count"])
+sum.corn = sum(counts_table_df[,"Corner.Count"])
+sum.f = sum(counts_table_df[,"Foul.Count"])
+
+counts_table_df_relfreq = goals %>% 
+  group_by(Player.Name) %>% 
+  summarise(Scored.Goal=round(sum(Scored.Goal)/sum.scored,4)*100,
+            Shots.on.Goal=round(sum(Shots.On.Goal)/sum.sog, 4)*100,
+            Rebound.Goal=round(sum(Rebound.Goal)/sum.rg, 4)*100,
+            Assist=round(sum(Assist)/sum.a, 4)*100,
+            Pass.Assist=round(sum(Pass.To.Assist)/sum.pa, 4)*100,
+            Corner=round(sum(Insert.Penalty.Corner)/sum.corn, 4)*100,
+            Foul=round(sum(Foul.Drawn)/sum.f, 4)*100,
+            .groups = 'drop') %>% 
+  arrange(desc(Scored.Goal)) %>% 
+  gt()
+
+ag2 = as.data.frame(counts_table_df_relfreq)
+xtable(ag2, type = "latex", file = "Agg2.tex")
+```
+
+
+```{r}
+ag2
+ag3 = data.frame("T" = c(rep(0,17)))
+ag3$Player.Name = ag$Player.Name
+
+
+ag3$Scored.Goal2 = paste(ag$Scored.Goal," (",ag2$Scored.Goal, "%)", sep="")
+
+
+ag3$Shots.On.Goal2 = paste(ag$Shots.On.Goal," (",ag2$Shots.on.Goal, "%)", sep="")
+
+
+ag3$Rebound.Goal2 = paste(ag$Rebound.Goal," (",ag2$Rebound.Goal, "%)", sep="")
+
+
+ag3$Assist2 = paste(ag$Assist," (",ag2$Assist, "%)", sep="")
+
+
+ag3$Pass.to.Assist2 = paste(ag$Pass.To.Assist," (",ag2$Pass.Assist, "%)", sep="")
+
+
+ag3$Insert.Penalty.Corner2 = paste(ag$Insert.Penalty.Corner," (",ag2$Corner, "%)", sep="")
+
+
+ag3$Foul.Drawn2= paste(ag$Foul.Drawn," (",ag2$Foul, "%)", sep="")
+
+ag3$Touches = ag$Touches
+ag3
+
+xtable(ag3, type = "latex", file = "Agg2.tex")
+
+```
+
+
+
+
+```{r}
+touches_table = goals %>% 
+  group_by(Player.Name) %>% 
+  summarise(Avg.Touches = round(mean(Touches), 3), 
+            Min.Touches=min(Touches),
+            Max.Touches=max(Touches),
+            SD.Touches=round(sd(Touches), 3)) %>% 
+  arrange(desc(Avg.Touches)) %>% 
+  gt()
+
+touches_table = as.data.frame(touches_table)
+xtable(touches_table, type = "latex", file = "Touches_Table.tex")
 ```
 

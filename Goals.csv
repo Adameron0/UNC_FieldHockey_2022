@@ -31,197 +31,198 @@ Goal ,Game Number,Game Opponent,Player Name,Scored Goal,Shots On Goal,Rebound Go
 11,3,UPenn,Sietske Bruning,0,0,0,1,0,0,0,1
 11,3,UPenn,Meredith Sholder,1,1,0,0,0,0,0,1
 11,3,UPenn,Madison Orobono,0,0,0,0,1,0,0,1
-19,4,Stanford,Ryleigh Heck,1,1,0,0,0,0,0,1
-19,4,Stanford,Erin Matson,0,0,0,1,0,0,0,1
-20,4,Stanford,Jasmina Smolenaars,0,0,0,0,1,0,0,1
-20,4,Stanford,Paityn Wirth,0,0,0,1,0,0,0,1
-20,4,Stanford,Katie Dixon,1,1,0,0,0,0,0,1
-21,4,Stanford,Ashley Sessa,0,0,0,0,0,1,0,1
-21,4,Stanford,Madison Orobono,0,0,0,0,0,0,0,1
-21,4,Stanford,Erin Matson,0,1,0,0,0,0,0,1
-21,4,Stanford,Steph Weber,0,1,0,0,0,0,0,1
-21,4,Stanford,Kennedy Cliggett,1,1,1,0,0,0,0,1
-22,4,Stanford,Ashley Sessa,1,1,1,0,0,1,0,2
-22,4,Stanford,Romea Riccardo,0,0,0,0,0,0,0,1
-22,4,Stanford,Sietske Bruning,0,1,0,0,0,0,0,1
-22,4,Stanford,Paityn Wirth,0,1,0,0,0,0,0,1
-23,4,Stanford,Paityn Wirth,0,0,0,0,0,0,1,1
-23,4,Stanford,Lisa Slinkert,1,1,0,0,0,0,0,1
-24,4,Stanford,Lisa Slinkert,0,0,0,0,0,0,0,1
-24,4,Stanford,Katie Dixon,0,0,0,0,0,0,0,1
-24,4,Stanford,Ryleigh Heck,1,1,1,0,0,0,0,1
-25,5,Louisville,Ashley Sessa,1,1,0,0,0,0,0,1
-26,5,Louisville,Kennedy Cliggett,0,0,0,0,0,0,0,1
-26,5,Louisville,Erin Matson,0,1,0,0,0,0,0,1
-26,5,Louisville,Lisa Slinkert,1,1,1,0,0,0,0,1
-27,5,Louisville,Erin Matson,0,0,0,0,0,0,0,1
-27,5,Louisville,Paityn Wirth,1,1,0,0,0,0,0,1
-28,6,Wake Forest,Jasmina Smolenaars,0,0,0,0,0,0,0,1
-28,6,Wake Forest,Erin Matson,1,1,0,0,0,0,0,1
-29,6,Wake Forest,Meredith Sholder,0,0,0,0,1,0,0,1
-29,6,Wake Forest,Lisa Slinkert,0,0,0,1,0,0,0,1
-29,6,Wake Forest,Erin Matson,1,1,0,0,0,0,0,1
-30,7,Liberty,Ashley Sessa,0,0,0,0,0,0,1,1
-30,7,Liberty,Erin Matson,1,1,0,0,0,0,0,1
-31,7,Liberty,Lisa Slinkert,1,1,0,0,0,0,0,2
-31,7,Liberty,Ryleigh Heck,0,0,0,1,0,0,0,1
-32,7,Liberty,Erin Matson,1,1,0,0,0,0,0,1
-33,7,Liberty,Kelly Smith,0,0,0,0,1,0,0,1
-33,7,Liberty,Erin Matson,0,0,0,1,0,0,0,1
-33,7,Liberty,Paityn Wirth,1,1,0,0,0,0,0,1
-34,7,Liberty,Romea Riccardo,0,0,0,1,0,0,0,1
-34,7,Liberty,Erin Matson,1,1,0,0,0,0,0,1
-35,7,Liberty,Erin Matson,1,1,1,0,0,0,0,1
-35,7,Liberty,Ashley Sessa,0,0,0,0,0,1,0,1
-35,7,Liberty,Romea Riccardo,0,0,0,0,0,0,0,1
-35,7,Liberty,Sietske Bruning,0,1,0,0,0,0,0,1
-36,8,Boston College,Ashley Sessa,1,1,0,0,0,1,0,2
-36,8,Boston College,Romea Riccardo,0,0,0,0,1,0,0,1
-36,8,Boston College,Sietske Bruning,0,0,0,1,0,0,0,1
-37,8,Boston College,Ashley Sessa,0,0,0,0,0,1,0,1
-37,8,Boston College,Jasmina Smolenaars,1,1,0,0,0,0,0,1
-38,8,Boston College,Lisa Slinkert,0,0,0,0,1,1,0,1
-38,8,Boston College,Jasmina Smolenaars,0,0,0,1,0,0,0,1
-38,8,Boston College,Ryleigh Heck,1,1,0,0,0,0,0,1
-39,8,Boston College,Jasmina Smolenaars,0,0,0,0,0,0,0,1
-39,8,Boston College,Erin Matson,1,1,0,0,0,0,0,1
-39,8,Boston College,Ashley Sessa,0,0,0,0,0,0,0,1
-39,8,Boston College,Paityn Wirth,0,0,0,0,0,0,0,1
-40,9,UConn,Paityn Wirth,0,0,0,0,0,0,0,1
-40,9,UConn,Ashley Sessa,0,0,0,0,0,0,0,1
-40,9,UConn,Meredith Sholder,0,0,0,0,0,0,0,1
-40,9,UConn,Erin Matson,1,1,0,0,0,0,0,1
-41,9,UConn,Paityn Wirth,0,0,0,0,0,0,0,1
-41,9,UConn,Erin Matson,1,1,0,0,0,0,0,2
-41,9,UConn,Ryleigh Heck,0,1,0,0,0,0,1,1
-42,9,UConn,Yasmina Smolenaars,0,0,0,0,0,0,0,1
-42,9,UConn,Erin Matson,0,0,0,0,0,0,0,1
-42,9,UConn,Ashley Sessa,0,1,0,0,0,0,0,1
-42,9,UConn,Ryleigh Heck,1,1,0,0,0,0,0,1
-43,10,Syracuse,Ryleigh Heck,0,0,0,0,0,0,0,1
-43,10,Syracuse,Erin Matson,0,0,0,0,0,0,1,0
-43,10,Syracuse,Paityn Wirth,0,0,0,0,0,0,1,1
-43,10,Syracuse,Ashley Sessa,0,0,0,1,0,1,0,1
-43,10,Syracuse,Romea Riccardo,0,0,0,1,0,0,0,1
-43,10,Syracuse,Sietske Bruning,1,1,0,0,0,0,0,1
-44,10,Syracuse,Ashley Sessa,0,0,0,0,0,2,0,3
-44,10,Syracuse,Romea Riccardo,0,0,0,0,0,0,0,2
-44,10,Syracuse,Erin Matson,0,0,0,0,0,0,1,2
-44,10,Syracuse,Kennedy Cliggett,1,1,1,0,0,0,0,1
-44,10,Syracuse,Sietske Bruning,0,1,0,0,0,0,0,1
-45,10,Syracuse,Sietske Bruning,0,0,0,1,0,0,0,1
-45,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
-46,10,Syracuse,Jasmina Smolenaars,0,0,0,0,1,0,0,1
-46,10,Syracuse,Erin Matson,0,0,0,1,0,0,0,1
-46,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
-47,10,Syracuse,Ryleigh Heck,0,0,0,1,0,0,0,1
-47,10,Syracuse,Erin Matson,1,1,0,0,0,0,0,1
-48,10,Syracuse,Katie Dixon,0,0,0,0,0,0,0,1
-48,10,Syracuse,Romea Riccardo,0,0,0,0,1,0,0,1
-48,10,Syracuse,Ciana Riccardo,0,1,0,1,0,0,0,1
-48,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
-49,10,Syracuse,Ashley Sessa,0,0,0,1,0,1,0,1
-49,10,Syracuse,Romea Riccardo,0,0,0,1,0,0,0,1
-49,10,Syracuse,Sietske Bruning,1,1,0,0,0,0,0,1
-50,10,Syracuse,Romea Riccardo,0,0,0,0,0,0,0,1
-50,10,Syracuse,Erin Matson,1,1,0,0,0,0,1,2
-51,10,Syracuse,Jasmina Smolenaars,0,0,0,0,0,0,1,1
-51,10,Syracuse,Romea Riccardo,0,0,0,0,0,0,0,1
-51,10,Syracuse,Erin Matson,1,1,0,0,0,0,0,1
-52,10,Syracuse,Paityn Wirth,0,0,0,1,0,0,0,2
-52,10,Syracuse,Erin Matson,0,0,0,0,0,0,0,1
-52,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
-53,10,Syracuse,Jasmina Smolenaars,0,0,0,0,0,0,0,1
-53,10,Syracuse,Erin Matson,1,1,1,0,0,0,0,1
-53,10,Syracuse,Ryleigh Heck,0,1,0,0,0,0,0,2
-54,10,Syracuse,Ciana Riccardo,0,0,0,0,0,0,0,1
-54,10,Syracuse,Lisa Slinkert,0,0,0,0,1,0,0,1
-54,10,Syracuse,Erin Matson,0,0,0,1,0,0,0,1
-54,10,Syracuse,Kennedy Cliggett,1,1,0,0,0,0,0,1
-55,10,Syracuse,Paityn Wirth,1,1,0,0,0,0,1,2
-55,10,Syracuse,Ashley Sessa,0,0,0,0,0,1,0,1
-55,10,Syracuse,Jasmina Smolenaars,0,0,0,1,0,0,0,1
-55,10,Syracuse,Madison Orobono,0,0,0,0,1,0,0,1
-56,10,Syracuse,Jasmina Smolenaars,0,0,0,0,0,0,0,1
-56,10,Syracuse,Lisa Slinkert,0,0,0,0,1,0,0,1
-56,10,Syracuse,Erin Matson,0,0,0,1,0,0,0,1
-56,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
-57,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,2
-57,10,Syracuse,Erin Matson,0,0,0,1,0,0,0,1
-58,10,Syracuse,Sietske Bruning,0,0,0,0,0,0,1,1
-58,10,Syracuse,Paityn Wirth,0,0,0,1,0,1,0,1
-58,10,Syracuse,Romea Riccardo,0,0,0,1,0,0,0,1
-58,10,Syracuse,Erin Matson,1,1,0,0,0,0,0,1
-59,10,Syracuse,Madison Orobono,0,0,0,0,0,0,0,1
-59,10,Syracuse,Sietske Bruning,0,0,0,0,0,0,0,1
-59,10,Syracuse,Kelly Smith,0,0,0,0,1,0,0,1
-59,10,Syracuse,Erin Matson,0,0,0,1,0,0,0,1
-59,10,Syracuse,Kennedy Cliggett,1,1,0,0,0,0,0,1
-60,10,Syracuse,Ashley Sessa,0,0,0,0,0,1,0,3
-60,10,Syracuse,Sietske Bruning,0,0,0,0,0,0,1,1
-60,10,Syracuse,Erin Matson,1,3,0,0,0,0,0,2
-60,10,Syracuse,Meredith Sholder,0,1,0,0,0,0,1,1
-61,10,Syracuse,Paityn Wirth,0,0,0,0,0,0,0,1
-61,10,Syracuse,Erin Matson,0,0,0,0,0,0,1,1
-61,10,Syracuse,Ashley Sessa,0,0,0,0,0,1,0,1
-61,10,Syracuse,Sietske Bruning,0,0,0,1,0,0,0,1
-61,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
-61,10,Syracuse,Romea Riccardo,0,0,0,0,1,0,0,1
-62,10,Syracuse,Ryleigh Heck,0,0,0,0,0,0,1,1
-62,10,Syracuse,Ashley Sessa,0,0,0,0,0,1,0,1
-62,10,Syracuse,Romea Riccardo,0,0,0,0,0,0,0,1
-62,10,Syracuse,Erin Matson,0,1,0,0,0,0,0,1
-62,10,Syracuse,Lisa Slinkert,1,1,1,0,0,0,0,1
-63,10,Syracuse,Paityn Wirth,0,0,0,0,0,1,1,2
-63,10,Syracuse,Romea Riccardo,0,0,0,0,0,0,0,1
-63,10,Syracuse,Erin Matson,0,0,0,0,1,0,0,1
-63,10,Syracuse,Sietske Bruning,0,0,0,1,0,0,0,1
-63,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
-64,11,Delaware,Kennedy Cliggett,1,1,0,0,0,0,0,1
-64,11,Delaware,Erin Matson,0,0,0,0,0,0,0,2
-64,11,Delaware,Meredith Sholder,0,0,0,0,0,0,0,1
-65,11,Delaware,Ciana Riccardo,0,0,0,0,0,1,0,1
-65,11,Delaware,Romea Riccardo,0,0,0,0,0,0,0,1
-65,11,Delaware,Erin Matson,0,0,0,0,1,0,0,1
-65,11,Delaware,Sietske Bruning,0,1,0,1,0,0,0,1
-65,11,Delaware,Kennedy Cliggett,1,1,0,0,0,0,0,1
-65,11,Delaware,Kiersten Thomassey,0,0,0,0,0,0,1,0
-66,11,Delaware,Sietske Bruning,0,0,0,0,0,0,0,1
-66,11,Delaware,Romea Riccardo,0,0,0,0,1,0,0,1
-66,11,Delaware,Erin Matson,0,0,0,1,0,0,0,1
-66,11,Delaware,Ryleigh Heck,1,1,0,0,0,0,0,1
-67,11,Delaware,Ashley Sessa,1,0,0,0,0,0,0,1
-67,11,Delaware,Kiersten Thomassey,0,0,0,1,0,0,0,1
-67,11,Delaware,Erin Matson,0,0,0,0,1,0,0,1
-68,11,Delaware,Lisa Slinkert,1,1,0,0,0,0,0,1
-68,11,Delaware,Ashley Sessa,0,0,0,0,0,0,0,2
-68,11,Delaware,Ryleigh Heck,0,0,0,0,0,0,0,1
-68,11,Delaware,Romea Riccardo,0,0,0,0,0,0,0,1
-69,12,Saint Josephs,Paityn Wirth,1,1,1,0,0,0,0,1
-69,12,Saint Josephs,Erin Matson,0,1,0,0,0,0,0,1
-70,12,Saint Josephs,Paityn Wirth,0,0,0,1,0,1,0,1
-70,12,Saint Josephs,Romea Riccardo,0,0,0,1,0,0,0,1
-70,12,Saint Josephs,Erin Matson,1,1,0,0,0,0,1,1
-71,12,Saint Josephs,Erin Matson,1,1,0,0,0,0,0,1
-71,12,Saint Josephs,Paityn Wirth,0,0,0,1,0,0,0,1
-72,12,Saint Josephs,Erin Matson,1,1,0,0,0,0,1,1
-73,12,Saint Josephs,Ashley Sessa,1,1,0,0,0,0,0,1
-74,13,Penn State,Ciana Riccardo,0,0,0,1,0,0,0,1
-74,13,Penn State,Erin Matson,1,1,0,0,0,0,0,1
-74,13,Penn State,Kiersten Thomassey,0,0,0,0,1,0,0,1
-75,13,Penn State,Paityn Wirth,0,0,0,0,0,0,0,1
-75,13,Penn State,Jasmina Smolenaars,0,0,0,0,0,0,0,1
-75,13,Penn State,Ryleigh Heck,0,0,0,0,0,0,0,1
-75,13,Penn State,Ashley Sessa,0,1,0,0,0,0,0,1
-75,13,Penn State,Erin Matson,1,1,1,0,0,0,0,1
-76,13,Penn State,Ryleigh Heck,0,0,0,0,0,0,0,1
-76,13,Penn State,Erin Matson,0,1,0,1,0,0,0,2
-76,13,Penn State,Paityn Wirth,1,2,1,0,0,0,0,2
-77,14,Northwestern,Erin Matson,0,0,0,0,0,0,1,0
-77,14,Northwestern,Ashley Sessa,0,0,0,0,0,1,0,1
-77,14,Northwestern,Meredith Sholder,0,0,0,0,1,0,0,1
-77,14,Northwestern,Sietske Bruning,0,0,0,1,0,0,0,1
-77,14,Northwestern,Ryleigh Heck,1,1,0,0,0,0,0,1
-78,14,Northwestern,Romea Riccardo,0,0,0,0,1,0,0,1
-78,14,Northwestern,Paityn Wirth,0,0,0,1,0,0,0,1
-78,14,Northwestern,Erin Matson,1,1,0,0,0,0,0,1
+12,4,Stanford,Ryleigh Heck,1,1,0,0,0,0,0,1
+12,4,Stanford,Erin Matson,0,0,0,1,0,0,0,1
+13,4,Stanford,Jasmina Smolenaars,0,0,0,0,1,0,0,1
+13,4,Stanford,Paityn Wirth,0,0,0,1,0,0,0,1
+13,4,Stanford,Katie Dixon,1,1,0,0,0,0,0,1
+14,4,Stanford,Ashley Sessa,0,0,0,0,0,1,0,1
+14,4,Stanford,Madison Orobono,0,0,0,0,0,0,0,1
+14,4,Stanford,Erin Matson,0,1,0,0,0,0,0,1
+14,4,Stanford,Steph Weber,0,1,0,0,0,0,0,1
+14,4,Stanford,Kennedy Cliggett,1,1,1,0,0,0,0,1
+15,4,Stanford,Ashley Sessa,1,1,1,0,0,1,0,2
+15,4,Stanford,Romea Riccardo,0,0,0,0,0,0,0,1
+15,4,Stanford,Sietske Bruning,0,1,0,0,0,0,0,1
+15,4,Stanford,Paityn Wirth,0,1,0,0,0,0,0,1
+16,4,Stanford,Paityn Wirth,0,0,0,0,0,0,1,1
+16,4,Stanford,Lisa Slinkert,1,1,0,0,0,0,0,1
+17,4,Stanford,Lisa Slinkert,0,0,0,0,0,0,0,1
+17,4,Stanford,Katie Dixon,0,0,0,0,0,0,0,1
+17,4,Stanford,Ryleigh Heck,1,1,1,0,0,0,0,1
+18,5,Louisville,Ashley Sessa,1,1,0,0,0,0,0,1
+19,5,Louisville,Kennedy Cliggett,0,0,0,0,0,0,0,1
+19,5,Louisville,Erin Matson,0,1,0,0,0,0,0,1
+19,5,Louisville,Lisa Slinkert,1,1,1,0,0,0,0,1
+20,5,Louisville,Erin Matson,0,0,0,0,0,0,0,1
+20,5,Louisville,Paityn Wirth,1,1,0,0,0,0,0,1
+21,6,Wake Forest,Jasmina Smolenaars,0,0,0,0,0,0,0,1
+21,6,Wake Forest,Erin Matson,1,1,0,0,0,0,0,1
+22,6,Wake Forest,Meredith Sholder,0,0,0,0,1,0,0,1
+22,6,Wake Forest,Lisa Slinkert,0,0,0,1,0,0,0,1
+22,6,Wake Forest,Erin Matson,1,1,0,0,0,0,0,1
+23,7,Liberty,Ashley Sessa,0,0,0,0,0,0,1,1
+23,7,Liberty,Erin Matson,1,1,0,0,0,0,0,1
+24,7,Liberty,Lisa Slinkert,1,1,0,0,0,0,0,2
+24,7,Liberty,Ryleigh Heck,0,0,0,1,0,0,0,1
+25,7,Liberty,Erin Matson,1,1,0,0,0,0,0,1
+26,7,Liberty,Kelly Smith,0,0,0,0,1,0,0,1
+26,7,Liberty,Erin Matson,0,0,0,1,0,0,0,1
+26,7,Liberty,Paityn Wirth,1,1,0,0,0,0,0,1
+27,7,Liberty,Romea Riccardo,0,0,0,1,0,0,0,1
+27,7,Liberty,Erin Matson,1,1,0,0,0,0,0,1
+28,7,Liberty,Erin Matson,1,1,1,0,0,0,0,1
+28,7,Liberty,Ashley Sessa,0,0,0,0,0,1,0,1
+28,7,Liberty,Romea Riccardo,0,0,0,0,0,0,0,1
+28,7,Liberty,Sietske Bruning,0,1,0,0,0,0,0,1
+29,8,Boston College,Ashley Sessa,1,1,0,0,0,1,0,2
+29,8,Boston College,Romea Riccardo,0,0,0,0,1,0,0,1
+29,8,Boston College,Sietske Bruning,0,0,0,1,0,0,0,1
+30,8,Boston College,Ashley Sessa,0,0,0,0,0,1,0,1
+30,8,Boston College,Jasmina Smolenaars,1,1,0,0,0,0,0,1
+31,8,Boston College,Lisa Slinkert,0,0,0,0,1,1,0,1
+31,8,Boston College,Jasmina Smolenaars,0,0,0,1,0,0,0,1
+31,8,Boston College,Ryleigh Heck,1,1,0,0,0,0,0,1
+32,8,Boston College,Jasmina Smolenaars,0,0,0,0,0,0,0,1
+32,8,Boston College,Erin Matson,1,1,0,0,0,0,0,1
+32,8,Boston College,Ashley Sessa,0,0,0,0,0,0,0,1
+32,8,Boston College,Paityn Wirth,0,0,0,0,0,0,0,1
+33,9,UConn,Paityn Wirth,0,0,0,0,0,0,0,1
+33,9,UConn,Ashley Sessa,0,0,0,0,0,0,0,1
+33,9,UConn,Meredith Sholder,0,0,0,0,0,0,0,1
+33,9,UConn,Erin Matson,1,1,0,0,0,0,0,1
+34,9,UConn,Paityn Wirth,0,0,0,0,0,0,0,1
+34,9,UConn,Erin Matson,1,1,0,0,0,0,0,2
+34,9,UConn,Ryleigh Heck,0,1,0,0,0,0,1,1
+35,9,UConn,Yasmina Smolenaars,0,0,0,0,0,0,0,1
+35,9,UConn,Erin Matson,0,0,0,0,0,0,0,1
+35,9,UConn,Ashley Sessa,0,1,0,0,0,0,0,1
+35,9,UConn,Ryleigh Heck,1,1,0,0,0,0,0,1
+36,10,Syracuse,Ryleigh Heck,0,0,0,0,0,0,0,1
+36,10,Syracuse,Erin Matson,0,0,0,0,0,0,1,0
+36,10,Syracuse,Paityn Wirth,0,0,0,0,0,0,1,1
+36,10,Syracuse,Ashley Sessa,0,0,0,1,0,1,0,1
+36,10,Syracuse,Romea Riccardo,0,0,0,1,0,0,0,1
+36,10,Syracuse,Sietske Bruning,1,1,0,0,0,0,0,1
+37,10,Syracuse,Ashley Sessa,0,0,0,0,0,2,0,3
+37,10,Syracuse,Romea Riccardo,0,0,0,0,0,0,0,2
+37,10,Syracuse,Erin Matson,0,0,0,0,0,0,1,2
+37,10,Syracuse,Kennedy Cliggett,1,1,1,0,0,0,0,1
+37,10,Syracuse,Sietske Bruning,0,1,0,0,0,0,0,1
+38,10,Syracuse,Sietske Bruning,0,0,0,1,0,0,0,1
+38,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
+39,10,Syracuse,Jasmina Smolenaars,0,0,0,0,1,0,0,1
+39,10,Syracuse,Erin Matson,0,0,0,1,0,0,0,1
+39,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
+40,10,Syracuse,Ryleigh Heck,0,0,0,1,0,0,0,1
+40,10,Syracuse,Erin Matson,1,1,0,0,0,0,0,1
+41,10,Syracuse,Katie Dixon,0,0,0,0,0,0,0,1
+41,10,Syracuse,Romea Riccardo,0,0,0,0,1,0,0,1
+41,10,Syracuse,Ciana Riccardo,0,1,0,1,0,0,0,1
+41,10,Syracuse,Ryleigh Heck,1,1,0,0,0,0,0,1
+42,11,UVA,Ashley Sessa,0,0,0,1,0,1,0,1
+42,11,UVA,Romea Riccardo,0,0,0,1,0,0,0,1
+42,11,UVA,Sietske Bruning,1,1,0,0,0,0,0,1
+43,11,UVA,Romea Riccardo,0,0,0,0,0,0,0,1
+43,11,UVA,Erin Matson,1,1,0,0,0,0,1,2
+44,11,UVA,Jasmina Smolenaars,0,0,0,0,0,0,1,1
+44,11,UVA,Romea Riccardo,0,0,0,0,0,0,0,1
+44,11,UVA,Erin Matson,1,1,0,0,0,0,0,1
+45,12,St Joes,Paityn Wirth,0,0,0,1,0,0,0,2
+45,12,St Joes,Erin Matson,0,0,0,0,0,0,0,1
+45,12,St Joes,Ryleigh Heck,1,1,0,0,0,0,0,1
+46,12,St Joes,Jasmina Smolenaars,0,0,0,0,0,0,0,1
+46,12,St Joes,Erin Matson,1,1,1,0,0,0,0,1
+46,12,St Joes,Ryleigh Heck,0,1,0,0,0,0,0,2
+47,12,St Joes,Ciana Riccardo,0,0,0,0,0,0,0,1
+47,12,St Joes,Lisa Slinkert,0,0,0,0,1,0,0,1
+47,12,St Joes,Erin Matson,0,0,0,1,0,0,0,1
+47,12,St Joes,Kennedy Cliggett,1,1,0,0,0,0,0,1
+48,12,St Joes,Paityn Wirth,1,1,0,0,0,0,1,2
+48,12,St Joes,Ashley Sessa,0,0,0,0,0,1,0,1
+48,12,St Joes,Jasmina Smolenaars,0,0,0,1,0,0,0,1
+48,12,St Joes,Madison Orobono,0,0,0,0,1,0,0,1
+49,12,St Joes,Jasmina Smolenaars,0,0,0,0,0,0,0,1
+49,12,St Joes,Lisa Slinkert,0,0,0,0,1,0,0,1
+49,12,St Joes,Erin Matson,0,0,0,1,0,0,0,1
+49,12,St Joes,Ryleigh Heck,1,1,0,0,0,0,0,1
+50,12,St Joes,Ryleigh Heck,1,1,0,0,0,0,0,2
+50,12,St Joes,Erin Matson,0,0,0,1,0,0,0,1
+51,13,Duke,Sietske Bruning,0,0,0,0,0,0,1,1
+51,13,Duke,Paityn Wirth,0,0,0,1,0,1,0,1
+51,13,Duke,Romea Riccardo,0,0,0,1,0,0,0,1
+51,13,Duke,Erin Matson,1,1,0,0,0,0,0,1
+52,13,Duke,Madison Orobono,0,0,0,0,0,0,0,1
+52,13,Duke,Sietske Bruning,0,0,0,0,0,0,0,1
+52,13,Duke,Kelly Smith,0,0,0,0,1,0,0,1
+52,13,Duke,Erin Matson,0,0,0,1,0,0,0,1
+52,13,Duke,Kennedy Cliggett,1,1,0,0,0,0,0,1
+53,14,Syracuse ACCT,Ashley Sessa,0,0,0,0,0,1,0,3
+53,14,Syracuse ACCT,Sietske Bruning,0,0,0,0,0,0,1,1
+53,14,Syracuse ACCT,Erin Matson,1,3,0,0,0,0,0,2
+53,14,Syracuse ACCT,Meredith Sholder,0,1,0,0,0,0,1,1
+54,14,Syracuse ACCT,Paityn Wirth,0,0,0,0,0,0,0,1
+54,14,Syracuse ACCT,Erin Matson,0,0,0,0,0,0,1,1
+54,14,Syracuse ACCT,Ashley Sessa,0,0,0,0,0,1,0,1
+54,14,Syracuse ACCT,Sietske Bruning,0,0,0,1,0,0,0,1
+54,14,Syracuse ACCT,Ryleigh Heck,1,1,0,0,0,0,0,1
+54,14,Syracuse ACCT,Romea Riccardo,0,0,0,0,1,0,0,1
+55,15,UVA ACCT ,Ryleigh Heck,0,0,0,0,0,0,1,1
+55,15,UVA ACCT ,Ashley Sessa,0,0,0,0,0,1,0,1
+55,15,UVA ACCT ,Romea Riccardo,0,0,0,0,0,0,0,1
+55,15,UVA ACCT ,Erin Matson,0,1,0,0,0,0,0,1
+55,15,UVA ACCT ,Lisa Slinkert,1,1,1,0,0,0,0,1
+56,15,UVA ACCT ,Paityn Wirth,0,0,0,0,0,1,1,2
+56,15,UVA ACCT ,Romea Riccardo,0,0,0,0,0,0,0,1
+56,15,UVA ACCT ,Erin Matson,0,0,0,0,1,0,0,1
+56,15,UVA ACCT ,Sietske Bruning,0,0,0,1,0,0,0,1
+56,15,UVA ACCT ,Ryleigh Heck,1,1,0,0,0,0,0,1
+57,15,UVA ACCT ,Ryleigh Heck,1,1,0,0,0,0,0,1
+58,16,Delaware,Kennedy Cliggett,1,1,0,0,0,0,0,1
+58,16,Delaware,Erin Matson,0,0,0,0,0,0,0,2
+58,16,Delaware,Meredith Sholder,0,0,0,0,0,0,0,1
+59,16,Delaware,Ciana Riccardo,0,0,0,0,0,1,0,1
+59,16,Delaware,Romea Riccardo,0,0,0,0,0,0,0,1
+59,16,Delaware,Erin Matson,0,0,0,0,1,0,0,1
+59,16,Delaware,Sietske Bruning,0,1,0,1,0,0,0,1
+59,16,Delaware,Kennedy Cliggett,1,1,0,0,0,0,0,1
+59,16,Delaware,Kiersten Thomassey,0,0,0,0,0,0,1,0
+60,16,Delaware,Sietske Bruning,0,0,0,0,0,0,0,1
+60,16,Delaware,Romea Riccardo,0,0,0,0,1,0,0,1
+60,16,Delaware,Erin Matson,0,0,0,1,0,0,0,1
+60,16,Delaware,Ryleigh Heck,1,1,0,0,0,0,0,1
+61,16,Delaware,Ashley Sessa,1,0,0,0,0,0,0,1
+61,16,Delaware,Kiersten Thomassey,0,0,0,1,0,0,0,1
+61,16,Delaware,Erin Matson,0,0,0,0,1,0,0,1
+62,16,Delaware,Lisa Slinkert,1,1,0,0,0,0,0,1
+62,16,Delaware,Ashley Sessa,0,0,0,0,0,0,0,2
+62,16,Delaware,Ryleigh Heck,0,0,0,0,0,0,0,1
+62,16,Delaware,Romea Riccardo,0,0,0,0,0,0,0,1
+63,17,Saint Josephs,Paityn Wirth,1,1,1,0,0,0,0,1
+63,17,Saint Josephs,Erin Matson,0,1,0,0,0,0,0,1
+64,17,Saint Josephs,Paityn Wirth,0,0,0,1,0,1,0,1
+64,17,Saint Josephs,Romea Riccardo,0,0,0,1,0,0,0,1
+64,17,Saint Josephs,Erin Matson,1,1,0,0,0,0,1,1
+65,17,Saint Josephs,Erin Matson,1,1,0,0,0,0,0,1
+65,17,Saint Josephs,Paityn Wirth,0,0,0,1,0,0,0,1
+66,17,Saint Josephs,Erin Matson,1,1,0,0,0,0,1,1
+67,17,Saint Josephs,Ashley Sessa,1,1,0,0,0,0,0,1
+68,18,Penn State,Ciana Riccardo,0,0,0,1,0,0,0,1
+68,18,Penn State,Erin Matson,1,1,0,0,0,0,0,1
+68,18,Penn State,Kiersten Thomassey,0,0,0,0,1,0,0,1
+69,18,Penn State,Paityn Wirth,0,0,0,0,0,0,0,1
+69,18,Penn State,Jasmina Smolenaars,0,0,0,0,0,0,0,1
+69,18,Penn State,Ryleigh Heck,0,0,0,0,0,0,0,1
+69,18,Penn State,Ashley Sessa,0,1,0,0,0,0,0,1
+69,18,Penn State,Erin Matson,1,1,1,0,0,0,0,1
+70,18,Penn State,Ryleigh Heck,0,0,0,0,0,0,0,1
+70,18,Penn State,Erin Matson,0,1,0,1,0,0,0,2
+70,18,Penn State,Paityn Wirth,1,2,1,0,0,0,0,2
+71,19,Northwestern,Erin Matson,0,0,0,0,0,0,1,0
+71,19,Northwestern,Ashley Sessa,0,0,0,0,0,1,0,1
+71,19,Northwestern,Meredith Sholder,0,0,0,0,1,0,0,1
+71,19,Northwestern,Sietske Bruning,0,0,0,1,0,0,0,1
+71,19,Northwestern,Ryleigh Heck,1,1,0,0,0,0,0,1
+72,19,Northwestern,Romea Riccardo,0,0,0,0,1,0,0,1
+72,19,Northwestern,Paityn Wirth,0,0,0,1,0,0,0,1
+72,19,Northwestern,Erin Matson,1,1,0,0,0,0,0,1
