@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.24)  2 MAR 2023 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.24)  2 MAR 2023 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -771,7 +771,7 @@ Underfull \hbox (badness 2277) in paragraph at lines 243--244
 \OT1/cmr/m/n/10 the high-est num-ber of es-ti-mated
  []
 
-[7] (FinalReportPlayoff1.aux)
+[7] [8] (FinalReportPlayoff1.aux)
 Package logreq Info: Writing requests to 'FinalReportPlayoff1.run.xml'.
 \openout1 = `FinalReportPlayoff1.run.xml'.
 
@@ -797,9 +797,9 @@ s/aedam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><
 C:/Users/aedam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><C:/Users/aedam/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmsy7.pfb>
-Output written on FinalReportPlayoff1.pdf (7 pages, 780101 bytes).
+Output written on FinalReportPlayoff1.pdf (8 pages, 781967 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
